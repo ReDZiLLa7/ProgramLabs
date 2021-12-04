@@ -48,6 +48,7 @@ int main()
 
     printf("%s\n", "Task 5");
     char str[50];
+    getchar();
     gets(str);
     del_spaces(str);
     printf("%s\n", str);

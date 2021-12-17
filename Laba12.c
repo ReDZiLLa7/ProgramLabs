@@ -3,10 +3,10 @@
 
 int main(int argc, char *argv[])
 {
-    // Записать сумму a + b в файл
-    FILE *file;
-    file = fopen(argv[3], "w");
-    fprintf(file, "Sum = %d", atoi(argv[1]) + atoi(argv[2]));
-    fclose(file);
+    // argv[0] - указывает на имя программы
+    freopen("file", "w", stdout);
+    argv[1] = "15";
+    argv[2] = "10";
+    printf("Sum = %d", atoi(argv[1]) + atoi(argv[2]));
     return 0;
 }
